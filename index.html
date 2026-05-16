@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Books Kenya - Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature {
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .status {
+            background: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 1.5rem;
+            background: white;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat h4 {
+            font-size: 2rem;
+            color: #667eea;
+        }
+
+        .stat p {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Hello Books Kenya</h1>
+        <p>Your Premier Online Bookstore</p>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Welcome to Hello Books Kenya Shop</h2>
+            <p>Discover thousands of books from around the world. Read more, learn more, grow more.</p>
+            <button class="cta-button" onclick="alert('Shop coming soon!')">Browse Books</button>
+        </div>
+
+        <div class="status">
+            ✅ <strong>Shop is Live!</strong> Your store is now deployed and ready to accept orders.
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h4>📖</h4>
+                <p>Thousands of Books</p>
+            </div>
+            <div class="stat">
+                <h4>🌍</h4>
+                <p>Global Shipping</p>
+            </div>
+            <div class="stat">
+                <h4>⭐</h4>
+                <p>5-Star Service</p>
+            </div>
+            <div class="stat">
+                <h4>🚚</h4>
+                <p>Fast Delivery</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📚 Wide Selection</h3>
+                <p>From bestsellers to rare finds, explore our extensive collection of books across all genres.</p>
+            </div>
+            <div class="feature">
+                <h3>💳 Easy Payment</h3>
+                <p>Secure payment options with multiple methods available for your convenience.</p>
+            </div>
+            <div class="feature">
+                <h3>🚀 Fast Shipping</h3>
+                <p>Quick and reliable delivery to get your books to you as soon as possible.</p>
+            </div>
+            <div class="feature">
+                <h3>📞 24/7 Support</h3>
+                <p>Our customer support team is always ready to help with your questions and concerns.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <h3>Ready to Start Reading?</h3>
+            <p style="margin: 1rem 0; color: #666;">Join thousands of happy readers in Kenya and beyond.</p>
+            <button class="cta-button" onclick="alert('Registration coming soon!')">Sign Up Today</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hello Books Kenya. All rights reserved.</p>
+        <p>Deployed with ✨ and Vercel</p>
+    </footer>
+</body>
+</html>
